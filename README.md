@@ -4,7 +4,7 @@
 ## 1. Report 1
 + Lê Thị Mai Hương - 20173164:
 + Lê Đức Hải:
-+ Lý Trung Kiên - 20173207: Phân tích yêu cầu cho use case "Thuê xe"
++ Lý Trung Kiên - 20173207: Phân tích yêu cầu cho use case "Thuê xe", "Thanh toán"
 + Dương Hồng Tuấn:
 
 

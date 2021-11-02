@@ -4,12 +4,12 @@
 ## 1. Report 1
 + Lê Thị Mai Hương:
 + Lê Đức Hải:
-+ Lý Trung Kiên: 
++ Lý Trung Kiên: Vẽ biểu đồ UC "Thuê xe"; Đặc tả UC "Thuê xe"
 + Dương Hồng Tuấn:
 
 
 ## 2. Report 2
 + Lê Thị Mai Hương:
 + Lê Đức Hải:
-+ Lý Trung Kiên:
++ Lý Trung Kiên: Thiết kế kiến trúc cho UC "Thuê xe"
 + Dương Hồng Tuấn:

@@ -2,14 +2,14 @@
 
 # Phân công công việc
 ## 1. Report 1
-+ Lê Thị Mai Hương:
++ Lê Thị Mai Hương - 20173164:
 + Lê Đức Hải:
-+ Lý Trung Kiên: Vẽ biểu đồ UC "Thuê xe"; Đặc tả UC "Thuê xe"
++ Lý Trung Kiên: 
 + Dương Hồng Tuấn:
 
 
 ## 2. Report 2
-+ Lê Thị Mai Hương:
++ Lê Thị Mai Hương - 20173164: Thiết kế kiến trúc cho use case tìm kiếm bãi đỗ xe và xem thông tin xe đang thuê
 + Lê Đức Hải:
-+ Lý Trung Kiên: Thiết kế kiến trúc cho UC "Thuê xe"
++ Lý Trung Kiên:
 + Dương Hồng Tuấn:

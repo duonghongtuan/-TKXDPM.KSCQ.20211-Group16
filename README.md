@@ -10,6 +10,6 @@
 
 ## 2. Report 2
 + Lê Thị Mai Hương - 20173164: Thiết kế kiến trúc cho use case tìm kiếm bãi đỗ xe và xem thông tin xe đang thuê
-+ Lê Đức Hải:
++ Lê Đức Hải: Thiết kế kiên trúc cho use case "Trả xe"
 + Lý Trung Kiên - 20173207: Thiết kế kiến trúc cho use case "Thuê xe"
 + Dương Hồng Tuấn:Thiết kế kiến trúc cho use case "Thanh Toán"

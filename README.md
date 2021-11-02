@@ -5,7 +5,7 @@
 + Lê Thị Mai Hương - 20173164: Phân tích yêu cầu cho use case Tìm kiếm bãi đỗ xe 
 + Lê Đức Hải: Phân tích yêu cầu cho use case Trả xe và Thanh toán
 + Lý Trung Kiên - 20173207: Phân tích yêu cầu cho use case Thuê xe và Thanh toán
-+ Dương Hồng Tuấn: Phân tích yêu cầu cho use case Xem thông tin xe trong bãi xe và Xem thông tin xe đang thuê
++ Dương Hồng Tuấn: Phân tích yêu cầu cho use case Xem thông tin xe trong bãi xe và Xem thông tin xe đang thuê, vẽ biểu đồ UC tổng quan, tổng hợp báo cáo
 
 
 ## 2. Report 2

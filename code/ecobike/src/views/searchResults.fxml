@@ -44,7 +44,7 @@
             </Label>
             <Button layoutX="1007.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #028C46; -fx-border-radius: 8; -fx-background-radius: 8;" text="XE ĐANG THUÊ" textFill="WHITE">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
             </Button>
             <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="235.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -12,12 +13,33 @@
 
 <AnchorPane prefHeight="735.0" prefWidth="1152.0" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
+      <Pane layoutX="30.0" layoutY="89.0" prefHeight="557.0" prefWidth="1092.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#028c46" layoutX="393.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRẢ XE THÀNH CÔNG!">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text layoutX="313.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cảm ơn quý khách đã sử dụng dịch vụ của chúng tôi!">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Button layoutX="476.0" layoutY="279.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="137.0" style="-fx-background-color: #028c46;" text="Về Trang chủ" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children></Pane>
       <Pane prefHeight="78.0" prefWidth="1152.0" style="-fx-background-color: #FFFFFF;">
          <children>
-            <TextField layoutX="220.0" layoutY="21.0" prefHeight="36.0" prefWidth="300.0" promptText="Tìm kiếm bãi xe" style="-fx-border-color: #3CC303; -fx-border-radius: 7; pa: 15;">
+            <TextField layoutX="220.0" layoutY="21.0" prefHeight="36.0" prefWidth="300.0" promptText="Tìm kiếm bãi xe" style="-fx-border-color: #3CC303; -fx-background-radius: 7; -fx-border-radius: 7;">
                <font>
                   <Font size="15.0" />
                </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
             </TextField>
             <ImageView fitHeight="40.0" fitWidth="133.0" layoutX="30.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -39,36 +61,18 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Button layoutX="1007.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #028C46; -fx-border-radius: 8;" text="XE ĐANG THUÊ" textFill="WHITE">
+            <Button layoutX="1007.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #028C46; -fx-border-radius: 8; -fx-background-radius: 8;" text="XE ĐANG THUÊ" textFill="WHITE">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="482.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="235.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../images/search.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Pane layoutX="30.0" layoutY="89.0" prefHeight="557.0" prefWidth="1092.0" style="-fx-background-color: white;">
-         <children>
-            <Text fill="#028c46" layoutX="347.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THANH TOÁN THÀNH CÔNG!">
-               <font>
-                  <Font size="30.0" />
-               </font>
-            </Text>
-            <Text layoutX="313.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cảm ơn quý khách đã sử dụng dịch vụ của chúng tôi">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Text>
-            <Button layoutX="476.0" layoutY="279.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="137.0" style="-fx-background-color: #028c46;" text="Về Trang chủ" textFill="WHITE">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children></Pane>
      
    </children>
 </AnchorPane>

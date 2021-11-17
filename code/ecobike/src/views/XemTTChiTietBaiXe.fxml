@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="735.0" prefWidth="1152.0" style="-fx-background-color: #F8F8F8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="78.0" prefWidth="1152.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <TextField layoutX="220.0" layoutY="21.0" prefHeight="36.0" prefWidth="300.0" promptText="Tìm kiếm bãi xe" style="-fx-border-color: #3CC303; -fx-border-radius: 7; pa: 15;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="40.0" fitWidth="133.0" layoutX="30.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="653.0" layoutY="24.0" text="TRANG CHỦ" textFill="#028c46">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="910.0" layoutY="24.0" text="TRẢ XE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="794.0" layoutY="24.0" text="THUÊ XE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="1007.0" layoutY="22.0" mnemonicParsing="false" style="-fx-background-color: #028C46; -fx-border-radius: 8;" text="XE ĐANG THUÊ" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="482.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/search.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="30.0" layoutY="85.0" prefHeight="682.0" prefWidth="1092.0" style="-fx-background-color: white;">
+         <children>
+            <HBox prefHeight="140.0" prefWidth="1092.0">
+               <children>
+                  <Pane prefHeight="140.0" prefWidth="220.0">
+                     <children>
+                        <ImageView fitHeight="140.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Staion.png" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="140.0" prefWidth="547.0" style="-fx-background-color: #;">
+                     <children>
+                        <Text fill="#096dd9" layoutX="37.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Bãi xe công viên Thống Nhất">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                        </Text>
+                        <Text layoutX="37.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Địa chỉ:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="37.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Diện tích;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="37.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Số xe trong bãi:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="39.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Số xe cho thuê:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="38.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Khoảng cách từ bạn đến bãi xe:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="267.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="354A Lê Duẩn, Phương Liên, Đống Đa, Hà Nội" />
+                        <Text layoutX="267.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000m" />
+                        <Text layoutX="267.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500" />
+                        <Text layoutX="267.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="200" />
+                        <Text layoutX="267.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1,200m" />
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Text fill="#096dd9" layoutX="59.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DANH SÁCH CÁC XE TRONG BÃI">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <HBox layoutX="5.0" layoutY="267.0" prefHeight="330.0" prefWidth="1082.0">
+               <children>
+                  <VBox prefHeight="251.0" prefWidth="540.0">
+                     <children>
+                        <Pane prefHeight="162.0" prefWidth="540.0">
+                           <children>
+                              <ImageView fitHeight="152.0" fitWidth="161.0" layoutX="7.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/BikeDefault.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#096dd9" layoutX="193.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Mã xe: BKA12345 ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Loại xe:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="270.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xe đạp đơn (Bike)" />
+                              <Text layoutX="174.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Trọng lượng:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="270.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.00kg" />
+                              <Text layoutX="174.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Giá xe:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Nhà sản xuất:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Trạng thái: ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="403.0" layoutY="60.0" mnemonicParsing="false" style="-fx-background-color: #028C46;" text="Thuê Xe" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="270.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500.000 vnđ" />
+                              <Text layoutX="270.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ASAMA" />
+                              <Text layoutX="270.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sẵn sàng" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets></Pane>
+                        <Pane prefHeight="168.0" prefWidth="532.0">
+                           <children>
+                              <ImageView fitHeight="157.0" fitWidth="170.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/BikeDefault.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#096dd9" layoutX="193.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Mã xe: BKA12345 ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Loại xe:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="270.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xe đạp đơn (Bike)" />
+                              <Text layoutX="174.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Trọng lượng:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="270.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.00kg" />
+                              <Text layoutX="174.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Giá xe:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Nhà sản xuất:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Trạng thái: ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="403.0" layoutY="60.0" mnemonicParsing="false" style="-fx-background-color: #028C46;" text="Thuê Xe" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="270.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500.000 vnđ" />
+                              <Text layoutX="270.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ASAMA" />
+                              <Text layoutX="270.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sẵn sàng" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="251.0" prefWidth="540.0">
+                     <children>
+                        <Pane prefHeight="168.0" prefWidth="540.0">
+                           <children>
+                              <ImageView fitHeight="174.0" fitWidth="178.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/MotorDefault.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#096dd9" layoutX="193.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Mã xe: BKA12345 ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Loại xe:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="270.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xe đạp đơn (Bike)" />
+                              <Text layoutX="174.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Trọng lượng:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="270.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.00kg" />
+                              <Text layoutX="174.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Giá xe:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Nhà sản xuất:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Trạng thái: ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="413.0" layoutY="61.0" mnemonicParsing="false" style="-fx-background-color: #028C46;" text="Thuê Xe" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="270.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500.000 vnđ" />
+                              <Text layoutX="270.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ASAMA" />
+                              <Text layoutX="270.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sẵn sàng" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="168.0" prefWidth="540.0">
+                           <children>
+                              <ImageView fitHeight="174.0" fitWidth="178.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/MotorDefault.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#096dd9" layoutX="193.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Mã xe: BKA12345 ">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="DEFAULT" />
+                                 </cursor>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Loại xe:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="270.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xe đạp đơn (Bike)" />
+                              <Text layoutX="174.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Trọng lượng:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="270.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5.00kg" />
+                              <Text layoutX="174.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Giá xe:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Nhà sản xuất:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="174.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Trạng thái: ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Button layoutX="413.0" layoutY="61.0" mnemonicParsing="false" style="-fx-background-color: #028C46;" text="Thuê Xe" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Text layoutX="270.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500.000 vnđ" />
+                              <Text layoutX="270.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ASAMA" />
+                              <Text layoutX="270.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sẵn sàng" />
+                           </children>
+                        </Pane>
+                     </children></VBox>
+               </children></HBox>
+         </children>
+      </Pane>
+     
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+[
+	{
+		"stationId": "station1",
+		"name": "Bãi xe thống nhất",
+		"address": "354A Đường Lê Duẩn, Phương Liên, Đống Đa, Hà Nội",
+		"freeSpace": "200",
+		"totalSpace": "200",
+		"phone": "0123456789"
+	},
+	{
+		"stationId": "station2",
+		"name": "Bãi xe bách khoa",
+		"address": "Bách khoa, Hai Bà Trưng, Hà Nội",
+		"freeSpace": "150",
+		"totalSpace": "150",
+		"phone": "0123456789"
+	},
+	{
+		"stationId": "station3",
+		"name": "Bãi xe giáp bát",
+		"address": "Giải Phóng, Giáp Bát, Hoàng Mai, Hà Nội",
+		"freeSpace": "200",
+		"totalSpace": "200",
+		"phone": "0123456789"
+	},
+	{
+		"stationId": "station4",
+		"name": "Bãi xe mỹ đình",
+		"address": "Mỹ Đình, Nam Từ Liêm, Hà Nội",
+		"freeSpace": "200",
+		"totalSpace": "200",
+		"phone": "0123456789"
+	}
+]

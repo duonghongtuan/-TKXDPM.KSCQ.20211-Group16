@@ -1,0 +1,10 @@
+[
+	{
+		"customerId": "customer1",
+		"fullName": "Tran Duc Bo",
+		"email": "ducbo@gmail.com",
+		"password": "ducdeptrai",
+		"phoneNumber": "0123456789",
+		"birthday": "26/02/1999"
+	}
+]

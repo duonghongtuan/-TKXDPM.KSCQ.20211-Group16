@@ -66,7 +66,7 @@ public class ECBUser extends JFrame{
 
 		JLabel labelUser = new JLabel();
 		labelUser.setBorder(new EmptyBorder(0, 30, 0, 0));
-		labelUser.setText("Copyright © 2020 Team One. All rights reserved.");
+		labelUser.setText("Copyright © 2021 group-16. All rights reserved.");
 		labelUser.setFont(new Font("Time New Roman", Font.BOLD, 13));
 		actionPane.add(labelUser, BorderLayout.WEST);
 		

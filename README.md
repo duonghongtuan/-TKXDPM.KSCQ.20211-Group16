@@ -1,8 +1,8 @@
 # TKXDPM.KSCQ.20211-Group16
 
-##How to install the program:
+## How to install the program:
 
-###Requirements:
+### Requirements:
 - Hardware: 
 - Software / Libraries:
 - Data: 

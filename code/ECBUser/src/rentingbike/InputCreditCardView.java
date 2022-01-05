@@ -87,11 +87,12 @@ public class InputCreditCardView extends JDialog{
 			if (!cardId.equals("")&&!cardId.equals(null)) {
 				CreditCard card = getCard(cardId);
 				if (card!=null) {
+					double deposit = bike.getCost()*0.4;
 					if (checkCard(cardId)) {
-					if (card.getAmount()>=bike.getCost()) {
+					if (card.getAmount()>=deposit) {
 						addOrder(cardId);
 						controller.addOrder(order);
-						double resCard = controller.minusAmountCard(cardId, bike.getCost());
+						double resCard = controller.minusAmountCard(cardId, deposit);
 						if (resCard!=-1) {
 							DockingStation station = controller.getDockingStation(bike.getStationId());
 							station.setFreeSpace(station.getFreeSpace()-1);

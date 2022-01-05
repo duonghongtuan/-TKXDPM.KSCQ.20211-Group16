@@ -18,12 +18,12 @@ import com.ecb.bean.Bike;
 
 public class DataPanel extends JPanel{
 	private Bike bike;
-	private JTextField nameField;//ten xe
-	private JTextField typeField;//loai xe
-	private JTextField weightField;//trong luong
-	private JTextField licenseField;// bien so xe
-	private JTextField dateField;//ngay san xuat
-	private JTextField costField;//gia thanh
+	private JLabel nameField;//ten xe
+	private JLabel typeField;//loai xe
+	private JLabel weightField;//trong luong
+	private JLabel licenseField;// bien so xe
+	private JLabel dateField;//ngay san xuat
+	private JLabel costField;//gia thanh
 	private JButton rentingButton;//an nut de thue xe
 	private JLabel notificationLabel;//hien thi thong bao
 	InputCreditCardView notification;
@@ -40,52 +40,52 @@ public class DataPanel extends JPanel{
 		
 		
 		JLabel nameLabel = new JLabel("Tên xe");
-		nameField = new JTextField();
+		nameField = new JLabel();
 		this.add(nameLabel);
 		this.add(nameField);
-		nameLabel.setBounds(200,5,100,40);
-		nameField.setBounds(300,5,200,30);
+		nameLabel.setBounds(200,6,100,40);
+		nameField.setBounds(300,11,200,30);
 		
 		
 		JLabel typeLabel = new JLabel("Loại xe");
-		typeField = new JTextField();
+		typeField = new JLabel();
 		this.add(typeLabel);
 		this.add(typeField);
-		typeLabel.setBounds(200,45,100,40);
-		typeField.setBounds(300,45,200,30);
+		typeLabel.setBounds(200,50,100,40);
+		typeField.setBounds(300,56,200,30);
 		
 
 		
 		JLabel weightLabel = new JLabel("Trọng lượng");
-		weightField = new JTextField();
+		weightField = new JLabel();
 		this.add(weightLabel);
 		this.add(weightField);
 		weightLabel.setBounds(200,85,100,40);
-		weightField.setBounds(300,85,200,30);
+		weightField.setBounds(300,90,200,30);
 		
 
 		
 		JLabel licenseLabel = new JLabel("Biển số xe");
-		licenseField = new JTextField();
+		licenseField = new JLabel();
 		this.add(licenseLabel);
 		this.add(licenseField);
-		licenseLabel.setBounds(200,125,100,40);
+		licenseLabel.setBounds(200,120,100,40);
 		licenseField.setBounds(300,125,200,30);
 		
 		
 		JLabel dateLabel = new JLabel("Ngày sản xuất");
-		dateField = new JTextField();
+		dateField = new JLabel();
 		this.add(dateLabel);
 		this.add(dateField);
-		dateLabel.setBounds(200,165,100,40);
-		dateField.setBounds(300,165,200,30);
+		dateLabel.setBounds(200,160,100,40);
+		dateField.setBounds(300,166,200,30);
 		
-		JLabel costLabel = new JLabel("Giá thành");
-		costField = new JTextField();
+		JLabel costLabel = new JLabel("Tiền đặt cọc");
+		costField = new JLabel();
 		this.add(costLabel);
 		this.add(costField);
-		costLabel.setBounds(200,205,100,40);
-		costField.setBounds(300,205,200,30);
+		costLabel.setBounds(200,201,100,40);
+		costField.setBounds(300,207,200,30);
 		rentingButton = new JButton("Thuê xe");
 		rentingButton.setBounds(505,205,150,30);
 		this.add(rentingButton);	
@@ -121,15 +121,17 @@ public void showCaution() {
         	typeField.setText( "Xe đạp đơn");
         } else if (type == 1) {
         	typeField.setText("Xe đạp điện");
-        } else {
+        } else if (type == 2) {
         	typeField.setText("Xe đạp đôi");
+        }else {
+        	typeField.setText("Xe đạp đôi điện");
         }
 		
 		weightField.setText(Double.toString(bike.getWeight()));
 		licenseField.setText(bike.getLisencePlate());
 		DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy"); 
 		dateField.setText(dateFormat.format(bike.getManuafaturingDate()));
-		costField.setText(Double.toString(bike.getCost()));
+		costField.setText(Double.toString(bike.getCost()*0.4));
 	}
 	public void setData(Bike bike) {
 		this.bike = bike;

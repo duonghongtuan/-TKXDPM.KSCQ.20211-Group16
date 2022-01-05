@@ -33,10 +33,10 @@ public class ParameterizedStationSearchTest {
 	public void init() {
 		dockingStations = new ArrayList<DockingStation>();
 		
-		DockingStation station1 = new DockingStation("station1", "BX bách khoa", "", 100, 100, 12345678);
-		DockingStation station2 = new DockingStation("station2", "BX giáp bát", "", 100, 100, 987654321);
-		DockingStation station3 = new DockingStation("station3", "BX KTX bách khoa", "", 100, 100, 12345678);
-		DockingStation station4 = new DockingStation("station4", "BX thống nhất", "", 100, 100, 78854689);
+		DockingStation station1 = new DockingStation("station1", "EcoPark A", "", 50, 4, 12345678);
+		DockingStation station2 = new DockingStation("station2", "EcoPark B ", "", 100, 100, 987654321);
+		DockingStation station3 = new DockingStation("station3", "EcoPark C", "", 100, 100, 12345678);
+		DockingStation station4 = new DockingStation("station4", "EcoPark D", "", 100, 100, 78854689);
 		
 		dockingStations.add(station1);
 		dockingStations.add(station2);

@@ -34,13 +34,13 @@ public class TotalCostBlackBoxTest {
 				{ 8, 0 ,0 }, // { minutes, bikeType, expectedCost }
 				// <= 10 minutes, bike != 0
 				{ 5, 1, 0 },
-				// <= 40 minutes, bike 0
-				{ 35, 0, 10000 },
-				// <= 40 minutes, bike != 0
-				{ 32, 1, 10000 },
-				// > 40 minutes, bike 0
+				// <= 30 minutes, bike 0
+				{ 25, 0, 10000 },
+				// <= 30 minutes, bike != 0
+				{ 27, 1, 10000 },
+				// > 30 minutes, bike 0
 				{ 60, 0, 16000 },
-				// > 40 minutes, bike != 0
+				// > 30 minutes, bike != 0
 				{ 60, 1, 19000 } });
 	}
 

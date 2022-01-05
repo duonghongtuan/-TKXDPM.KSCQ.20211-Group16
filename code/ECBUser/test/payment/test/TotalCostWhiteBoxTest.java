@@ -32,11 +32,11 @@ public class TotalCostWhiteBoxTest {
 		return Arrays.asList(new Object[][] {
 				// <= 10 minutes
 				{ 8, 0, 0 }, // { minutes, bikeType, expectedCost }
-				// <= 40 minutes
-				{ 35, 0, 10000 },
-				// > 40 minutes, bike 0
+				// <= 30 minutes
+				{ 25, 0, 10000 },
+				// > 30 minutes, bike 0
 				{ 60, 0, 16000 },
-				// > 40 minutes, bike != 0
+				// > 30 minutes, bike != 0
 				{ 60, 1, 19000 } });
 	}
 

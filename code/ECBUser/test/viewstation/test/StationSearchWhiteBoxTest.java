@@ -14,7 +14,7 @@ public class StationSearchWhiteBoxTest extends ParameterizedStationSearchTest{
 	@Parameterized.Parameters
 	public static Collection<Object[]> allTestCase(){
 		return Arrays.asList(new Object[][] {
-			{"bách khoa", 2},
+			{"EcoPark B", 2},
 			{"station 3",  1},
 			{null, 	4},
 		});

@@ -117,7 +117,8 @@ public class PaymentController {
 		}
 
 		// minus amount
-		api.plusAmount(card.getCardId(), bike.getCost());
+		double deposit = bike.getCost()*0.4;
+		api.plusAmount(card.getCardId(), deposit);
 		double res = api.minusAmount(card.getCardId(), total);
 
 		// update order
@@ -141,7 +142,7 @@ public class PaymentController {
 		closePaymentDialog();
 		openCheckoutDialog(String.format(
 				"<html>Thanh toán thành công! <br/><br/>Mã thẻ: %s <br/>Tài khoản: %s<br/>Đã thanh toán: %s<br/>Còn lại: %s</html>",
-				cardId, decimalFormat.format(card.getAmount() + bike.getCost()), decimalFormat.format(total),
+				cardId, decimalFormat.format(card.getAmount() + deposit), decimalFormat.format(total),
 				decimalFormat.format(res)));
 		if (finishedEventCallback != null) {
 			finishedEventCallback.run();

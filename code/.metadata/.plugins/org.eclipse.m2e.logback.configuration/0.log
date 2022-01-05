@@ -24,3 +24,8 @@
 2022-01-05 19:39:41,098 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\GitHub\TKXDPM.KSCQ.20211-Group16\code\ECBUser\src\main\resources
 2022-01-05 19:39:41,100 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-01-05 19:39:41,102 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\GitHub\TKXDPM.KSCQ.20211-Group16\code\ECBUser\src\test\resources
+2022-01-05 23:42:12,565 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-01-05 23:42:19,817 [Worker-5: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-05 23:42:19,820 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\GitHub\TKXDPM.KSCQ.20211-Group16\code\ECBUser\src\main\resources
+2022-01-05 23:42:19,823 [Worker-5: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-01-05 23:42:19,825 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\Documents\GitHub\TKXDPM.KSCQ.20211-Group16\code\ECBUser\src\test\resources

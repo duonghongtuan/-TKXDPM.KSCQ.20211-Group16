@@ -173,7 +173,7 @@ public class PaymentInfoPanel extends JPanel {
 			JLabel label_3 = new JLabel();
 			label_3.setHorizontalAlignment(SwingConstants.RIGHT);
 			label_3.setBounds(110, 116, 149, 14);
-			label_3.setText("(> 40 phút) " + String.valueOf(minutes - 40) + " phút");
+			label_3.setText("(> 30 phút) " + String.valueOf(minutes - 30) + " phút");
 			this.add(label_3);
 
 			JLabel lblPht_1_1_1 = new JLabel("3,000 / 15 phút");
@@ -185,9 +185,9 @@ public class PaymentInfoPanel extends JPanel {
 			purchaseLabel_3.setHorizontalAlignment(SwingConstants.RIGHT);
 			purchaseLabel_3.setBounds(445, 116, 116, 14);
 			if (paymentController.getBike().getType() != 0) {
-				purchaseLabel_3.setText(decimalFormat.format(Math.ceil((minutes - 40) * 1.0 / 15) * 3000 * 1.5));
+				purchaseLabel_3.setText(decimalFormat.format(Math.ceil((minutes - 30) * 1.0 / 15) * 3000 * 1.5));
 			} else {
-				purchaseLabel_3.setText(decimalFormat.format(Math.ceil((minutes - 40) * 1.0 / 15) * 3000));
+				purchaseLabel_3.setText(decimalFormat.format(Math.ceil((minutes - 30) * 1.0 / 15) * 3000));
 			}
 			this.add(purchaseLabel_3);
 		}

@@ -8,7 +8,7 @@ public class DockingStation {
 	private String name;
 	private String address;
 	private int freeSpace;
-	private int totalSpace;
+	private int freeBike;
 	private String phone;
 	private ArrayList<Bike> listBike;
 	
@@ -16,14 +16,14 @@ public class DockingStation {
 		super();
 	}
 
-	public DockingStation(String stationId, String name, String address, int freeSpace, int totalSpace,
+	public DockingStation(String stationId, String name, String address, int freeSpace, int freeBike,
 			String phone) {
 		super();
 		this.stationId = stationId;
 		this.name = name;
 		this.address = address;
 		this.freeSpace = freeSpace;
-		this.totalSpace = totalSpace;
+		this.freeBike = freeBike;
 		this.phone = phone;
 		this.listBike = new ArrayList<Bike>();
 	}
@@ -60,12 +60,12 @@ public class DockingStation {
 		this.freeSpace = freeSpace;
 	}
 
-	public int getTotalSpace() {
-		return totalSpace;
+	public int getFreeBike() {
+		return freeBike;
 	}
 
-	public void setTotalSpace(int totalSpace) {
-		this.totalSpace = totalSpace;
+	public void setFreeBike(int freeBike) {
+		this.freeBike = freeBike;
 	}
 
 	public String getPhone() {
@@ -97,7 +97,7 @@ public class DockingStation {
 		if (dockingStation.address != null && !dockingStation.address.equals("") && !this.address.contains(dockingStation.address)) {
 			return false;
 		}
-		if (dockingStation.totalSpace != 0 && this.totalSpace != dockingStation.totalSpace) {
+		if (dockingStation.freeBike != 0 && this.freeBike != dockingStation.freeBike) {
 			return false;
 		}
 		if (dockingStation.freeSpace != 0 && this.freeSpace != dockingStation.freeSpace) {

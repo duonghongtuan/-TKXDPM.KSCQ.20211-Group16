@@ -13,6 +13,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.UIManager;
 import javax.swing.border.LineBorder;
+import java.awt.Color;
 
 public class InfoBikeDialog extends JDialog {
 
@@ -95,12 +96,15 @@ public class InfoBikeDialog extends JDialog {
 		panel.add(costValue);
 		
 		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(UIManager.getColor("CheckBox.background"));
+		panel_1.setBackground(Color.WHITE);
 		panel_1.setBounds(0, 217, 434, 44);
 		contentPanel.add(panel_1);
 		panel_1.setLayout(null);
 		
 		JButton btnOk = new JButton("OK");
+		btnOk.setBorderPainted(false);
+		btnOk.setBackground(new Color(0, 128, 0));
+		btnOk.setForeground(Color.WHITE);
 		btnOk.addActionListener(new ActionListener() {
 			// Dong dialog
 			public void actionPerformed(ActionEvent e) {

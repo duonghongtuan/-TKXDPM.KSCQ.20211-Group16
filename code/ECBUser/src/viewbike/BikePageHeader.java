@@ -25,6 +25,7 @@ public class BikePageHeader extends AHeaderPane{
 	private JLabel labelNoOfBike;
 	private JLabel labelNoOfEBike;
 	private JLabel labelNoOfTWinBike;
+	private JLabel labelNoOfEdBike;
 	
 	public BikePageHeader(DockingStation station) {
 		// TODO Auto-generated constructor stub
@@ -32,7 +33,7 @@ public class BikePageHeader extends AHeaderPane{
 		labelStation.setFont(StringStyle.BIG_FONT);
 		labelAddress = new JLabel();
 		
-		int bike=0, ebike=0, twinbike=0;
+		int bike=0, ebike=0, twinbike=0, edbike=0;
 		
 		for (com.ecb.bean.Bike _bike: station.getListBike()) {
 			if(_bike.getType() == Constants.BIKE.bike)
@@ -41,14 +42,18 @@ public class BikePageHeader extends AHeaderPane{
 				ebike ++;
 			if(_bike.getType() == Constants.BIKE.twinBike)
 				twinbike ++;
+			if(_bike.getType() == Constants.BIKE.edBike)
+				edbike ++;
 		}
 		
-		labelNoOfBike = new JLabel("Số xe đạp đơn thường (Bike): " + bike);
+		labelNoOfBike = new JLabel("Số xe đạp đơn thường: " + bike);
 		labelNoOfBike.setFont(StringStyle.NORMAL_FONT);
-		labelNoOfEBike = new JLabel("Số xe đạp đơn điện (EBike): " + ebike);
+		labelNoOfEBike = new JLabel("Số xe đạp đơn điện: " + ebike);
 		labelNoOfEBike.setFont(StringStyle.NORMAL_FONT);
-		labelNoOfTWinBike = new JLabel("Số xe đạp đôi thường (TWinBike): " + twinbike);
+		labelNoOfTWinBike = new JLabel("Số xe đạp đôi thường: " + twinbike);
 		labelNoOfTWinBike.setFont(StringStyle.NORMAL_FONT);
+		labelNoOfEdBike = new JLabel("Số xe đạp đôi điện: " + edbike);
+		labelNoOfEdBike.setFont(StringStyle.NORMAL_FONT);
 		labelStation.setText(station.getName());
 		labelAddress.setText("Địa chỉ: "+station.getAddress());
 		labelAddress.setFont(StringStyle.NORMAL_FONT);
@@ -82,6 +87,9 @@ public class BikePageHeader extends AHeaderPane{
 		gridBagConstraints.gridx = 0;
 		gridBagConstraints.gridy = 2;
 		pane.add(labelNoOfTWinBike, gridBagConstraints);
+		gridBagConstraints.gridx = 0;
+		gridBagConstraints.gridy = 3;
+		pane.add(labelNoOfEdBike, gridBagConstraints);
 		return pane;
 	}
 	

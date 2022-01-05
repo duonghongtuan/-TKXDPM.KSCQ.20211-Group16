@@ -92,13 +92,13 @@ public class BikeSinglePane extends ADataSinglePane<Bike>{
 		Date date = bike.getManuafaturingDate();
 		SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
 		labelManufaturingDate.setText(buildText("Ngày SX", formatter.format(date)));
-		labelCost.setText(buildText("Giá", bike.getCost()));
+		labelCost.setText(buildText("Giá", bike.getCost()+ " vnđ"));
 		if(bike.isRent()){
-			labelStatus.setText(buildText("Trạng thái", "Được thuê", "red"));
+			labelStatus.setText(buildText("Trạng thái", "Đã được thuê", "red"));
 //			labelStatus.set
 		}
 		else
-			labelStatus.setText(buildText("Trạng thái", "OK"));
+			labelStatus.setText(buildText("Trạng thái", "Sẵn sàng", "green"));
 	}
 	
 

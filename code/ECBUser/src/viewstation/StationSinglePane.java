@@ -16,13 +16,15 @@ import other.SourcePath;
 import other.StringStyle;
 
 public class StationSinglePane extends ADataSinglePane<DockingStation> {
+	public StationSinglePane() {
+	}
 
 	private JLabel labelStationId;
 	private JLabel labelId;
 	private JLabel labelName;
 	private JLabel labelAddress;
 	private JLabel labelFreeSpace;
-	private JLabel labelTotalSpace;
+	private JLabel lableFreeBike;
 	private JLabel labelPhone;
 
 	@Override
@@ -37,16 +39,16 @@ public class StationSinglePane extends ADataSinglePane<DockingStation> {
 		labelName = new JLabel();
 		labelAddress = new JLabel();
 		labelFreeSpace = new JLabel();
-		labelTotalSpace = new JLabel();
+		lableFreeBike = new JLabel();
 		labelPhone = new JLabel();
 
 		inforPanel.setLayout(new BoxLayout(inforPanel, BoxLayout.Y_AXIS));
-//		inforPanel.setBorder(new LineBorder(Color.black, 2));
+		//inforPanel.setBorder(new LineBorder(Color.black, 2));
 		inforPanel.add(labelId);
 		inforPanel.add(labelName);
 		inforPanel.add(labelAddress);
 		inforPanel.add(labelFreeSpace);
-		inforPanel.add(labelTotalSpace);
+		inforPanel.add(lableFreeBike);
 		inforPanel.add(labelPhone);
 
 	}
@@ -58,7 +60,7 @@ public class StationSinglePane extends ADataSinglePane<DockingStation> {
 		labelName.setText(buildText("Trạm", station.getName()));
 		labelAddress.setText(buildText("Địa chỉ", station.getAddress()));
 		labelFreeSpace.setText(buildText("Số chỗ trống", station.getFreeSpace()));
-		labelTotalSpace.setText(buildText("Tổng số chỗ", station.getTotalSpace()));
+		lableFreeBike.setText(buildText("Số xe trong bãi", station.getFreeBike()));
 		labelPhone.setText(buildText("SĐT", station.getPhone()));
 	}
 

@@ -6,8 +6,9 @@ public class Constants {
 		public static int bike = 0;
 		public static int ebike = 1;
 		public static int twinBike = 2;
+		public static int edBike = 3;
 		
-		public static String bikeType[] = {"Xe đạp đơn thường (Bike)", "Xe đạp đơn điện (EBike)", "Xe đạp đôi thường (TWinBike)", ALL};
+		public static String bikeType[] = {"Xe đạp đơn thường", "Xe đạp đơn điện", "Xe đạp đôi thường", "Xe đạp đôi điện", ALL};
 		
 		public static String getBikeType(int typeBike) {
 			if(bikeType.length-1>typeBike)

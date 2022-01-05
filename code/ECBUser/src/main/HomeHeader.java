@@ -26,6 +26,7 @@ import other.StringStyle;
 public class HomeHeader extends JPanel {
 	
 	private JLabel label;
+	private JLabel lblEcobike;
 	private JPanel mainPane;
 	private JPanel buttonPane;
 	
@@ -35,23 +36,24 @@ public class HomeHeader extends JPanel {
 		buttonPane = new JPanel();
 		mainPane = new JPanel();
 
-		label = new JLabel("EcoBikeRental");
-		label.setFont(StringStyle.ICON_FONT);
-		label.setBorder(new EmptyBorder(20, 80, 0, 0));
+		lblEcobike = new JLabel("EcoBike");
+		lblEcobike.setIcon(SourcePath.getIcon("bike"));
+		lblEcobike.setFont(StringStyle.ICON_FONT);
+		lblEcobike.setBorder(new EmptyBorder(20, 80, 0, 0));
 		
-		add(label, BorderLayout.WEST);
+		add(lblEcobike, BorderLayout.WEST);
 		add(mainPane, BorderLayout.EAST);
 		
 		mainPane.setLayout(new BoxLayout(mainPane, BoxLayout.Y_AXIS));
 		
-		label = new JLabel(customer);
-		label.setIcon(SourcePath.getIcon("user"));
-		label.setFont(StringStyle.BIG_FONT);
-		label.setBorder(new EmptyBorder(10, 0, 10, 100));
-		
-		mainPane.add(label);
+//		label = new JLabel(customer);
+//		label.setIcon(SourcePath.getIcon("user"));
+//		label.setFont(StringStyle.BIG_FONT);
+//		label.setBorder(new EmptyBorder(10, 0, 10, 100));
+//		
+//		mainPane.add(label);
 		mainPane.add(buttonPane);
-//		mainPane.setBorder(new EmptyBorder(20, 0, 0, 0));
+		mainPane.setBorder(new EmptyBorder(20, 80, 0, 0));
 		
 		setUpButtonPane();
 		

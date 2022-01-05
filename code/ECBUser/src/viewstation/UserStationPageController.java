@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 

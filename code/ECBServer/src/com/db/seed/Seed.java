@@ -1,4 +1,4 @@
-package com.oms.db.seed;
+package com.db.seed;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,13 +8,13 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import com.bean.Bike;
+import com.bean.CreditCard;
+import com.bean.Customer;
+import com.bean.DockingStation;
+import com.bean.Order;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.oms.bean.Bike;
-import com.oms.bean.CreditCard;
-import com.oms.bean.Customer;
-import com.oms.bean.DockingStation;
-import com.oms.bean.Order;
 
 public class Seed {
 

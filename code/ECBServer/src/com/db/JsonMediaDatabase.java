@@ -1,13 +1,13 @@
-package com.oms.db;
+package com.db;
 
 import java.util.ArrayList;
 
-import com.oms.bean.Bike;
-import com.oms.bean.CreditCard;
-import com.oms.bean.Customer;
-import com.oms.bean.DockingStation;
-import com.oms.bean.Order;
-import com.oms.db.seed.Seed;
+import com.bean.Bike;
+import com.bean.CreditCard;
+import com.bean.Customer;
+import com.bean.DockingStation;
+import com.bean.Order;
+import com.db.seed.Seed;
 
 public class JsonMediaDatabase implements IMediaDatabase{
 	private static IMediaDatabase singleton = new JsonMediaDatabase();

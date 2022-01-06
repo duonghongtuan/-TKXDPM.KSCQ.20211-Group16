@@ -1,13 +1,13 @@
-package com.oms.service;
+package com.service;
 
 import java.util.ArrayList;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
-import com.oms.bean.DockingStation;
-import com.oms.db.IMediaDatabase;
-import com.oms.db.JsonMediaDatabase;
+import com.bean.DockingStation;
+import com.db.IMediaDatabase;
+import com.db.JsonMediaDatabase;
 
 @Path("/stations")
 public class DockingStationService {

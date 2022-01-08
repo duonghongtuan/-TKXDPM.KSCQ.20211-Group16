@@ -25,6 +25,8 @@ public class PaymentController {
 	private DockingStation startStation;
 	private DockingStation endStation;
 	private Bike bike;
+	
+	protected CalculateFeeInterface calculateFee;
 
 	Runnable finishedEventCallback;
 
@@ -39,6 +41,7 @@ public class PaymentController {
 		decimalFormat = new DecimalFormat("#.##");
 		decimalFormat.setGroupingUsed(true);
 		decimalFormat.setGroupingSize(3);
+		calculateFee = new CalculateFee1Impl();
 	}
 
 	public void showPaymentDialog() {
@@ -75,23 +78,8 @@ public class PaymentController {
 	}
 	
 	public double getTotalCost(int bikeType, long minutes) {
-		double total = 0;
-
-		// count total price
-		if (minutes <= 10) {
-			total = 0;
-		} else if (minutes <= 30) {
-				total = 10000;
-		} else {
-			if (bikeType != 0 ) {
-				total = 10000 + (Math.ceil((minutes - 30) * 1.0 / 15) * 3000) * 1.5;
-			}
-			else {
-				total = 10000 + Math.ceil((minutes - 30) * 1.0 / 15) * 3000;
-			}
-		}
-
-		return total;
+		
+		return calculateFee.getTotalCost(bikeType, minutes);
 	}
 
 	public void checkOut(String cardId, double total) {
@@ -122,7 +110,7 @@ public class PaymentController {
 
 		// update order
 		order.setPayment(true);
-		order.setAmount(getTotalCost(bike.getType(), TimeUnit.MILLISECONDS.toMinutes(getTimeRent())));
+		order.setAmount(calculateFee.getTotalCost(bike.getType(), TimeUnit.MILLISECONDS.toMinutes(getTimeRent())));
 		order.setTimeRent(getTimeRent());
 		api.updateOrder(order);
 

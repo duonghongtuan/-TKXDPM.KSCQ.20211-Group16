@@ -1,14 +1,14 @@
-package com.oms.service;
+package com.service;
 
 import java.util.ArrayList;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
-import com.oms.bean.Bike;
-import com.oms.bean.Order;
-import com.oms.db.IMediaDatabase;
-import com.oms.db.JsonMediaDatabase;
+import com.bean.Bike;
+import com.bean.Order;
+import com.db.IMediaDatabase;
+import com.db.JsonMediaDatabase;
 
 @Path("/bikes")
 public class BikeService {

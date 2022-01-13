@@ -27,6 +27,8 @@ public class PaymentController {
 	private Bike bike;
 
 	Runnable finishedEventCallback;
+	
+	protected CalculateFee calculateFee;
 
 	public PaymentController() {
 		api = EcoBikeApiFactory.getInstance();
@@ -39,6 +41,7 @@ public class PaymentController {
 		decimalFormat = new DecimalFormat("#.##");
 		decimalFormat.setGroupingUsed(true);
 		decimalFormat.setGroupingSize(3);
+		calculateFee = new CalculateFeeImpl1();
 	}
 
 	public void showPaymentDialog() {
@@ -71,27 +74,13 @@ public class PaymentController {
 	public long getTimeRent() {
 		long millis = Math.abs(order.getFinishTime().getTime()
 				- order.getStartTime().getTime());
-		return millis;
+		return millis*60;
 	}
 	
 	public double getTotalCost(int bikeType, long minutes) {
-		double total = 0;
+	
 
-		// count total price
-		if (minutes <= 10) {
-			total = 0;
-		} else if (minutes <= 30) {
-				total = 10000;
-		} else {
-			if (bikeType != 0 ) {
-				total = 10000 + (Math.ceil((minutes - 30) * 1.0 / 15) * 3000) * 1.5;
-			}
-			else {
-				total = 10000 + Math.ceil((minutes - 30) * 1.0 / 15) * 3000;
-			}
-		}
-
-		return total;
+		return calculateFee.getTotalCost(bikeType, minutes);
 	}
 
 	public void checkOut(String cardId, double total) {

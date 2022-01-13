@@ -1,12 +1,12 @@
-package com.oms.db;
+package com.db;
 
 import java.util.ArrayList;
 
-import com.oms.bean.Order;
-import com.oms.bean.Bike;
-import com.oms.bean.CreditCard;
-import com.oms.bean.Customer;
-import com.oms.bean.DockingStation;
+import com.bean.Bike;
+import com.bean.CreditCard;
+import com.bean.Customer;
+import com.bean.DockingStation;
+import com.bean.Order;
 
 public interface IMediaDatabase {
 	

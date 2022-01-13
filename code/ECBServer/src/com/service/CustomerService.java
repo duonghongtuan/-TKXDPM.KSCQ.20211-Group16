@@ -1,13 +1,13 @@
-package com.oms.service;
+package com.service;
 
 import java.util.ArrayList;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
-import com.oms.bean.Customer;
-import com.oms.db.IMediaDatabase;
-import com.oms.db.JsonMediaDatabase;
+import com.bean.Customer;
+import com.db.IMediaDatabase;
+import com.db.JsonMediaDatabase;
 
 @Path("/customers")
 public class CustomerService {

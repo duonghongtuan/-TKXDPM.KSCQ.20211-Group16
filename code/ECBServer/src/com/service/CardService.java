@@ -1,11 +1,11 @@
-package com.oms.service;
+package com.service;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
-import com.oms.bean.CreditCard;
-import com.oms.db.IMediaDatabase;
-import com.oms.db.JsonMediaDatabase;
+import com.bean.CreditCard;
+import com.db.IMediaDatabase;
+import com.db.JsonMediaDatabase;
 
 @Path("/cards")
 public class CardService {

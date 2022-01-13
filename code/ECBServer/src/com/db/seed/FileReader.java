@@ -1,4 +1,4 @@
-package com.oms.db.seed;
+package com.db.seed;
 
 import java.io.IOException;
 import java.net.URLDecoder;

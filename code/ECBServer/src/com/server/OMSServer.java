@@ -1,14 +1,14 @@
-package com.oms;
+package com.server;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
-import com.oms.service.BikeService;
-import com.oms.service.CardService;
-import com.oms.service.CustomerService;
-import com.oms.service.DockingStationService;
-import com.oms.service.OrderService;
+import com.service.BikeService;
+import com.service.CardService;
+import com.service.CustomerService;
+import com.service.DockingStationService;
+import com.service.OrderService;
 
 public class OMSServer {
 	public static final int PORT = 8080;

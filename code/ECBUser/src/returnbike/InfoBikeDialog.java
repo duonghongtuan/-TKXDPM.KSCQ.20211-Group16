@@ -86,11 +86,11 @@ public class InfoBikeDialog extends JDialog {
 		nSXValue.setBounds(213, 116, 132, 14);
 		panel.add(nSXValue);
 		
-		JLabel costLabel = new JLabel("Giá mua xe (VNĐ) :");
+		JLabel costLabel = new JLabel("Tiền đặt cọc (VNĐ) :");
 		costLabel.setBounds(89, 140, 118, 14);
 		panel.add(costLabel);
 		
-		JLabel costValue = new JLabel(String.valueOf(bike.getCost()));
+		JLabel costValue = new JLabel(String.valueOf(bike.getCost()*0.4));
 		costValue.setHorizontalAlignment(SwingConstants.RIGHT);
 		costValue.setBounds(213, 140, 132, 14);
 		panel.add(costValue);
